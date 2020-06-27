@@ -19,7 +19,7 @@ RUN apk add --update --no-cache openvpn wget unzip coreutils curl
 WORKDIR /vpn
 COPY startup.sh .
 
-RUN chmod +x ./startup.sh
+RUN chmod +x ./startvpn.sh
 CMD [ "./startvpn.sh" ]
 
 # youtube-dl server
