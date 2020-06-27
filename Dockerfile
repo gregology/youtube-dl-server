@@ -17,7 +17,7 @@ HEALTHCHECK --interval=60s --timeout=10s --start-period=30s CMD curl -L 'https:/
 
 RUN apk add --update --no-cache openvpn wget unzip coreutils curl
 WORKDIR /vpn
-COPY startup.sh .
+COPY startvpn.sh .
 
 RUN chmod +x ./startvpn.sh
 CMD [ "./startvpn.sh" ]
